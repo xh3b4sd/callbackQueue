@@ -3,6 +3,15 @@
   Callbacknesting gets more dirty when the amount of nested callbacks
   increases. Here is a way to control your asynchronous code pretty simple.
 
+
+
+## Installation
+
+    npm install callbackQueue
+
+
+
+
 ## Usage
 
     var callback = require('./callback.js')
