@@ -11,14 +11,13 @@
 
 
 
-
 ## Usage
 
-    var callback = require('./callback.js')
+    var CallbackQueue = require('callbackQueue')
       , moduleOne = require('./moduleOne.js')
       , moduleTwo = require('./moduleTwo.js');
 
-    var callbackQueue = callback.init(['moduleOne', 'moduleTwo'], function() {
+    var callbackQueue = CallbackQueue(['moduleOne', 'moduleTwo'], function() {
         console.log(this.moduleOneData);
         console.log(this.moduleTwoData);
     });

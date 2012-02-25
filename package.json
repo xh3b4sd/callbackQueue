@@ -2,13 +2,18 @@
   "author": "Tim Schindler <tim.schindler@adcloud.com>",
   "name": "callbackQueue",
   "description": "Dependencie registration module to control your workflow.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/zyndiecate/callbackQueue.git"
   },
   "engines": {
-    "node": ">=v0.4.9"
+    "node": ">=v0.4.8"
   },
-  "devDependencies": {}
+  "scripts": {
+    "test": "./node_modules/jasmine-node/bin/jasmine-node --matchall test/"
+  },
+  "devDependencies": {
+    "jasmine-node": ">=1.0.3"
+  }
 }
